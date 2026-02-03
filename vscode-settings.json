@@ -1,0 +1,7 @@
+{
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.cursorBlinking": "smooth",
+    "workbench.colorTheme": "Red",
+    "editor.fontSize": 13
+}
