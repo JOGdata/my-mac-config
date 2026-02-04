@@ -1,7 +1,47 @@
 {
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.inlineSuggest.edits.showCollapsed": true,
-    "editor.cursorBlinking": "smooth",
-    "workbench.colorTheme": "Red",
-    "editor.fontSize": 13
+  // ---------- Formatting ----------
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+  },
+
+  "[jinja-html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  // ---------- Python ----------
+  "python.analysis.typeCheckingMode": "basic",
+
+  "ruff.lint.select": ["E", "F", "I"],
+
+  // ---------- Tailwind / Jinja / HTMX ----------
+  "files.associations": {
+    "*.html": "jinja-html",
+  },
+
+  "tailwindCSS.includeLanguages": {
+    "jinja-html": "html",
+  },
+
+  "tailwindCSS.emmetCompletions": true,
+
+  "emmet.includeLanguages": {
+    "jinja-html": "html",
+  },
+
+  // ---------- Editor UX ----------
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.minimap.enabled": false,
+
+  // ---------- Workbench ----------
+  "workbench.iconTheme": "material-icon-theme",
+
+  // ---------- Files ----------
+  "files.autoSave": "onFocusChange",
 }
